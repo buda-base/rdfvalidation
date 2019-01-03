@@ -3,4 +3,43 @@
   <groupId>bdrc.io</groupId>
   <artifactId>rdfvalidation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>   
+    <jena.version>3.9.0</jena.version>
+  </properties>
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-arq</artifactId>
+      <version>${jena.version}</version>      
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.jena/jena-fuseki-embedded -->
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-fuseki-main</artifactId>
+      <version>${jena.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.jena/jena-rdfconnection -->
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-rdfconnection</artifactId>
+      <version>${jena.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.bdrc/jena-stable-turtle -->
+    <dependency>
+      <groupId>io.bdrc</groupId>
+      <artifactId>jena-stable-turtle</artifactId>
+      <version>0.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>rdfvalidation</finalName>    
+  </build>
 </project>
