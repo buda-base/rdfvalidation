@@ -1,0 +1,119 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix adr:   <http://purl.bdrc.io/resource-auth/> .
+@prefix as:    <http://www.w3.org/ns/activitystreams#> .
+@prefix aut:   <http://purl.bdrc.io/ontology/ext/auth/> .
+@prefix bdac:  <http://purl.bdrc.io/anncollection/> .
+@prefix bdan:  <http://purl.bdrc.io/annotation/> .
+@prefix bdd:   <http://purl.bdrc.io/data/> .
+@prefix bdo:   <http://purl.bdrc.io/ontology/core/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bf:    <http://id.loc.gov/ontologies/bibframe/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix f:     <java:io.bdrc.ldspdi.sparql.functions.> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix iiif2: <http://iiif.io/api/presentation/2#> .
+@prefix iiif3: <http://iiif.io/api/presentation/3#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsh:   <http://purl.bdrc.io/shacl/core/shape/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix tbr:   <http://purl.bdrc.io/ontology/toberemoved/> .
+@prefix text:  <http://jena.apache.org/text#> .
+@prefix tmp:   <http://purl.bdrc.io/ontology/tmp/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdr:P1583  a     bdo:Person ;
+   skos:prefLabel  "dri med 'od zer/"@bo-x-ewts , "隆钦热降巴·赤墨俄色"@zh-hans ;
+   bdo:hasChild  bdr:P8528 ;
+   bdo:hasFather  bdr:P1584 ;
+   bdo:hasMother  bdr:P1585 ;
+   bdo:hasParent  bdr:P1584 , bdr:P1585 ;
+   bdo:hasSon    bdr:P8528 ;
+   bdo:kinWith   bdr:P1584 , bdr:P1585 , bdr:P8528 ;
+   bdo:note      [ bdo:noteLocationStatement  "251" ;
+                   bdo:noteText  "biodata\n\nSubsequent main lineage holders include lha btsun chen po/ gter chen 'gyur med rdo rje/ 'bri gung rin chen phun tshogs/ rig 'dzin 'jigs med gling pa/ mi 'gyur nam mkha'i rdo rje/ 'jam dbyangs mkhyen brtse'i dbang po\n\nAmong them, 'jigs med gling pa received the nye brgyud via direct vision of klong chen pa.  'jigs med gling pa passed his lineage to rdo grub phrin las 'od zer, who passed it to mi 'gyur nam mkha' rdo rje, who in turn had a vision of klong chen pa and received the yang tig from him."@en ;
+                   bdo:noteWork  bdr:W27401
+                 ] ,
+         [ bdo:noteLocationStatement  "v. 2, pp.104-112" ;
+           bdo:noteText  "biography\ndates: 1308-1363"@en ;
+           bdo:noteWork  bdr:W25268
+         ] ,
+         [ bdo:noteText  "L. v.d. Kuijp has verified that the date of death of the subject was January, 1364. Also the unrecorded teacher Ston tshul may have been Btsun pa Ston tshul, Sa-skya scholar and author of at least two works on Tshad ma."@en ] ,
+         [ bdo:noteText  "Teachers (not recorded):\nSlob-dpon Dbang-ye, Ston-tshul, Khro-phu-ba, Rin-po-che Za-lung-pa (Zhang Tshal-pa'i Gdams ngag and Rgod-tshang-pa's teachings)\n1319. Takes rab-byung vows from the abbot of Bsam-yas Bsam-grub-rin-chen.\n1326. Enrolls in Gsang-phu Ne'u-thog for formal studies with Mkhan-rabs 15 Slob-dpon Btsan-rgod-pa and Mkhan-rabs 16 Bla-brang Chos-dpal-rgyal-mtshan.\n1338. Comes to Snye-phu Shug-gseb and teaches Snying thig."@en ] ,
+         [ bdo:noteLocationStatement  "p. 77" ;
+           bdo:noteWork  bdr:W19801
+         ] ,
+         [ bdo:noteLocationStatement  "p. 6" ;
+           bdo:noteWork  bdr:W19822
+         ] ;
+   bdo:personEvent  [ a             bdo:PersonBirth ;
+                      bdo:eventWhere  bdr:G967 ;
+                      bdo:onYear    1308
+                    ] ,
+         [ a             bdo:PersonDeath ;
+           bdo:onYear    1364
+         ] ,
+         [ a             bdo:PersonOccupiesSeat ;
+           bdo:eventWhere  bdr:G521
+         ] ;
+   bdo:personGender  bdr:GenderMale ;
+   bdo:personName  [ a             bdo:PersonCommonName ;
+                     rdfs:label    "klong chen pa/"@bo-x-ewts
+                   ] ,
+         [ a             bdo:PersonPersonalName ;
+           rdfs:label    "tshul khrims blo gros/"@bo-x-ewts
+         ] ,
+         [ a             bdo:PersonPrimaryName ;
+           rdfs:label    "dri med 'od zer/"@bo-x-ewts , "隆钦热降巴·赤墨俄色"@zh-hans
+         ] ,
+         [ a             bdo:PersonPrimaryTitle ;
+           rdfs:label    "klong chen rab 'byams pa dri med 'od zer/"@bo-x-ewts
+         ] ,
+         [ a             bdo:PersonSecretInitiatoryName ;
+           rdfs:label    "rgyal sras thugs mchog rtsal/"@bo-x-ewts
+         ] ,
+         [ a             bdo:PersonTitle ;
+           rdfs:label    "bsam yas lung mang ba/"@bo-x-ewts , "klong chen rab 'byams/"@bo-x-ewts
+         ] ;
+   bdo:personStudentOf  bdr:P1226 , bdr:P144 , bdr:P1584 , bdr:P1586 , bdr:P1587 , bdr:P1588 , bdr:P2085 , bdr:P2349 , bdr:P2JM183 , bdr:P2JM184 , bdr:P2JM185 , bdr:P2JM186 , bdr:P2JM187 , bdr:P2JM188 , bdr:P2JM189 , bdr:P2JM190 , bdr:P2JM191 , bdr:P403 , bdr:P4312 , bdr:P4860 , bdr:P66 ;
+   bdo:personTeacherOf  bdr:P2JM192 , bdr:P2JM193 , bdr:P2JM194 , bdr:P2JM195 , bdr:P2JM196 , bdr:P2JM197 , bdr:P2JM198 , bdr:P2JM199 , bdr:P2JM200 , bdr:P2JM201 , bdr:P2JM202 , bdr:P2JM203 , bdr:P2JM204 , bdr:P2JM205 , bdr:P2JM206 , bdr:P2JM207 , bdr:P314 , bdr:P5092 , bdr:P5911 , bdr:P6861 , bdr:P7091 , bdr:P8527 , bdr:P8528 , bdr:P8764 , bdr:P8784 ;
+   adm:gitRevision  "f03025c2fa045864b03b3aa2045bb08caa1eda68" ;
+   adm:logEntry  [ adm:logDate   "2008-06-30T17:01:56.496Z"^^xsd:dateTime ;
+                   adm:logMessage  "added records"@en ;
+                   adm:logWho    bdr:U00015
+                 ] ,
+         [ adm:logDate   "2008-07-02T17:03:41.75Z"^^xsd:dateTime ;
+           adm:logMessage  "added records"@en ;
+           adm:logWho    bdr:U00015
+         ] ,
+         [ adm:logDate   "2009-10-22T18:31:49.12Z"^^xsd:dateTime ;
+           adm:logMessage  "added name rgyal sras thugs mchog rtsal"@en ;
+           adm:logWho    bdr:U00016
+         ] ,
+         [ adm:logDate   "2011-04-27T12:51:43.397Z"^^xsd:dateTime ;
+           adm:logMessage  "bcos"@en ;
+           adm:logWho    bdr:U00021
+         ] ,
+         [ adm:logDate   "2011-07-01T04:41:07.905Z"^^xsd:dateTime ;
+           adm:logMessage  "edited names"@en ;
+           adm:logWho    bdr:U00020
+         ] ,
+         [ adm:logDate   "2011-08-02T16:53:12.77Z"^^xsd:dateTime ;
+           adm:logMessage  "added name in chinese"@en ;
+           adm:logWho    bdr:U00007
+         ] ,
+         [ adm:logDate   "2012-06-11T09:58:04.367Z"^^xsd:dateTime ;
+           adm:logMessage  "edited note"@en ;
+           adm:logWho    bdr:U00020
+         ] ,
+         [ adm:logDate   "2012-08-23T16:40:14.673Z"^^xsd:dateTime ;
+           adm:logMessage  "corrected title and name variant designations"@en ;
+           adm:logWho    bdr:U00012
+         ] ;
+   adm:status    bdr:StatusReleased .
